@@ -1,10 +1,7 @@
 async function getdata(categ){
     c=1
     console.log("Get called")
-    var url = 'https://newsapi.org/v2/top-headlines?' +
-          'category='+categ +
-          '&country=in&' +
-          'apiKey=617ba767057243cfa5aad12904e99502';
+    var url = 'https://gnews.io/api/v4/top-headlines?token=2619b7773b89f1bee4232007bca232e6&lang=en&topic='+categ;
     const res = await fetch(url)
     const data = await res.json() 
     
@@ -12,7 +9,7 @@ async function getdata(categ){
     var title=data['articles'][1]['title']    //startpage middle box
     var description=data['articles'][1]['description']
     var link=data['articles'][1]['url']
-    var urltoimage=data['articles'][1]['urlToImage']
+    var urltoimage=data['articles'][1]['image']
     $('.title').html(title);
     $('.description').html(description);
     $('.link').attr('href',link);
@@ -21,7 +18,7 @@ async function getdata(categ){
     var title=data['articles'][0]['title']     //startpage left box
     var description=data['articles'][0]['description']
     var link=data['articles'][0]['url']
-    var urltoimage=data['articles'][0]['urlToImage']
+    var urltoimage=data['articles'][0]['image']
     var content=data['articles'][0]['content']
     $('.title1').html(title);
     $('.description1').html(description);
@@ -32,7 +29,7 @@ async function getdata(categ){
     var title=data['articles'][2]['title']    //startpage right box
     var description=data['articles'][2]['description']
     var link=data['articles'][2]['url']
-    var urltoimage=data['articles'][2]['urlToImage']
+    var urltoimage=data['articles'][2]['image']
     var content=data['articles'][2]['content']
     $('.title2').html(title);
     $('.description2').html(description);
@@ -61,7 +58,7 @@ async function getdata(categ){
     
     var description=data['articles'][c]['description']
     var link=data['articles'][c]['url']
-    var urltoimage=data['articles'][c]['urlToImage']
+    var urltoimage=data['articles'][c]['image']
     var content=data['articles'][c]['content']
     $('.title').html(title);
     $('.description').html(description);
@@ -73,7 +70,7 @@ async function getdata(categ){
     var title1=data['articles'][c-1]['title']
     var description1=data['articles'][c-1]['description']
     var link1=data['articles'][c-1]['url']
-    var urltoimage1=data['articles'][c-1]['urlToImage']
+    var urltoimage1=data['articles'][c-1]['image']
     $('.title1').html(title1);
     $('.description1').html(description1);
     $('.link1').attr('href',link1);
@@ -82,7 +79,7 @@ async function getdata(categ){
     var title2=data['articles'][c+1]['title']
     var description2=data['articles'][c+1]['description']
     var link2=data['articles'][c+1]['url']
-    var urltoimage2=data['articles'][c+1]['urlToImage']
+    var urltoimage2=data['articles'][c+1]['image']
     $('.title2').html(title2);
     $('.description2').html(description2);
     $('.link2').attr('href',link2);
@@ -101,7 +98,7 @@ async function getdata(categ){
     var title=data['articles'][c]['title']
     var description=data['articles'][c]['description']
     var link=data['articles'][c]['url']
-    var urltoimage=data['articles'][c]['urlToImage']
+    var urltoimage=data['articles'][c]['image']
     $('.title').html(title);
     $('.description').html(description);
     $('.link').html(link);
@@ -110,7 +107,7 @@ async function getdata(categ){
     var title1=data['articles'][c+1]['title']
     var description1=data['articles'][c+1]['description']
     var link1=data['articles'][c+1]['url']
-    var urltoimage1=data['articles'][c+1]['urlToImage']
+    var urltoimage1=data['articles'][c+1]['image']
     $('.title1').html(title1);
     $('.description1').html(description1);
     $('.link1').attr('href',link1);
@@ -119,7 +116,7 @@ async function getdata(categ){
     var title2=data['articles'][c-1]['title']
     var description2=data['articles'][c-1]['description']
     var link2=data['articles'][c-1]['url']
-    var urltoimage2=data['articles'][c-1]['urlToImage']
+    var urltoimage2=data['articles'][c-1]['image']
     $('.title2').html(title2);
     $('.description2').html(description2);
     $('.link2').attr('href',link2);
