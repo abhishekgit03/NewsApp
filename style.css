@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=League+Spartan:wght@100&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@1,300&family=Prompt:wght@600&family=Ubuntu:wght@400;700&family=Varela+Round&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.hero{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images2.alphacoders.com/596/596041.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    z-index: -10;
+}
+
+.container
+{
+    background: linear-gradient(180deg, pink 10%, #FDFBF9 50%);
+    max-width: 500px;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+    padding: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6); 
+    z-index: 100;   
+}
+
+.container1
+{
+    max-width: 500px;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0.3;
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);   
+     
+}
+
+.container2
+{
+    max-width: 500px;
+    max-height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 10px;  
+    opacity:0.3; 
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
+}
+
+.urltoimage
+{
+    width:400px;
+    height:200px;
+    margin-top: 20px;
+    max-height:100%; 
+    max-width:100%;
+}
+
+.title
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:blue;
+   
+}
+
+.description
+{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.link
+{
+    max-height:100%;
+    max-width:100%;
+    left:0;
+    color:red;
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.content
+{
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.urltoimage1
+{
+    width:400px;
+    height:200px;
+    margin-top: 20px;
+    max-height:100%; 
+    max-width:100%;
+}
+
+
+.title1
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:blue;
+   
+}
+
+.description1
+{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.link1
+{
+    max-height:100%;
+    max-width:100%;
+    margin-left:100px;
+    color:red;
+    text-decoration: none;
+}
+
+.content1
+{
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.urltoimage2
+{
+    width:400px;
+    height:200px;
+    margin-top: 20px;
+    max-height:100%; 
+    max-width:100%;
+}
+
+
+.title2
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:blue;
+   
+}
+
+.description2
+{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.link2
+{
+    max-height:100%;
+    max-width:100%;
+    margin-left:100px;
+    color:red;
+    text-decoration: none;
+}
+
+.content2
+{
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons
+{
+    margin-top: 5px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.back
+{
+    background: rgb(17,0,36);
+    background: linear-gradient(90deg, rgba(17,0,36,1) 0%, rgba(27,99,248,1) 100%, rgba(255,255,255,1) 100%);
+    color:white;
+    text-decoration: none;
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+
+.next
+{
+   
+    background: rgb(17,0,36);
+    background: linear-gradient(90deg, rgba(17,0,36,1) 0%, rgba(27,99,248,1) 100%, rgba(255,255,255,1) 100%);
+    color:white;
+    text-decoration: none;
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 20px;
+}
+
+.next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.next:hover span {
+    padding-right: 25px;
+  }
+  
+.next:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+.back span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.back span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.back:hover span {
+    padding-right: 25px;
+  }
+  
+.back:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.main-container
+{
+  display: flex;
+  flex-direction: row;
+ 
+  
+}
+
+.category
+{
+    display: flex;
+    margin:10px;
+    position: relative;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+
+}
+
+#cat1
+{
+    margin: 20px 0px;
+    max-width: 300px;
+    margin-top: 50px;
+    background-color: #F2EEE2;
+    padding: 50px;
+    border-radius:20px;
+    color: white;
+    margin: 80px;
+     
+}
+/*BUSINESS */
+.business
+{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.business:visited
+{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.business:focus{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transform: translateY(30px);
+    
+}
+.business:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.business:active {
+  transform: translateY(4px);
+}
+
+
+/*ENTERTAINMENT */
+.entertainment:visited
+{
+    background-color: #3EECAC;
+    background-image: linear-gradient(90deg, #3EECAC 0%, #EE74E1 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.entertainment
+{
+    background-color: #3EECAC;
+    background-image: linear-gradient(90deg, #3EECAC 0%, #EE74E1 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.entertainment:focus{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transform: translateY(30px);
+    
+}
+.entertainment:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.entertainment:active {
+  transform: translateY(4px);
+}
+
+/*GENERAL*/
+.general:visited
+{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.general
+{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.general:focus{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transform: translateY(30px);
+    
+}
+.general:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.general:active {
+  transform: translateY(4px);
+}
+/*SPORTS*/
+.sports:visited
+{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    cursor: pointer;
+}
+.sports
+{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.sports:focus{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transform: translateY(30px);
+    
+}
+.sports:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+
+
+
