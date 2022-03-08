@@ -20,6 +20,29 @@
     z-index: -10;
 }
 
+.main-container
+{
+    display: flex;
+    justify-content: center;
+}
+.container1
+{
+    max-width: 500px;
+    max-height: 800px;
+    
+    width: 400px;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    opacity: 0.3;
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);   
+     
+}
+
 .container
 {
     background: linear-gradient(180deg, pink 10%, #FDFBF9 50%);
@@ -33,22 +56,6 @@
     border-radius: 20px;
     margin: 10px;
     box-shadow: 0px -2px 2px rgba(34,34,34,0.6); 
-    z-index: 100;   
-}
-
-.container1
-{
-    max-width: 500px;
-    max-height: 800px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    background: rgb(255, 255, 255);
-    padding: 50px;
-    border-radius: 20px;
-    margin: 10px;
-    opacity: 0.3;
-    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);   
      
 }
 
@@ -56,7 +63,8 @@
 {
     max-width: 500px;
     max-height: 800px;
-    margin: auto;
+    width: 400px;
+    height: 600px;
     margin-top: 50px;
     margin-bottom: 100px;
     background: rgb(255, 255, 255);
@@ -298,14 +306,14 @@
 
 #cat1
 {
-    margin: 20px 0px;
+    margin: 20px 10px;
     max-width: 300px;
     margin-top: 50px;
     background-color: #F2EEE2;
     padding: 50px;
     border-radius:20px;
     color: white;
-    margin: 80px;
+    
      
 }
 /*BUSINESS */
@@ -316,7 +324,7 @@
     outline: none;
     border: none;
     cursor: pointer;
-
+    transition: 0.3s ease;
 }
 .business:visited
 {
@@ -360,6 +368,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .entertainment:focus{
     background: rgb(131,58,180);
@@ -392,6 +401,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .general:focus{
     background: rgb(131,58,180);
@@ -421,6 +431,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .sports:focus{
     background: rgb(131,58,180);
@@ -434,5 +445,35 @@
 }
 
 
+.footer
+{
+  
+  padding: 10px;
+  bottom:0;
+  left:0;
+  width:100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+ 
+ 
+}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.credits
+{
+    text-align: center;
+    font-family:cursive;
+}
 
