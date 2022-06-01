@@ -37,7 +37,7 @@
     background: rgba(208,233,253,255);
     padding: 50px;
     border-radius: 20px;
-    margin: 50px -50px;    
+    margin: 0% -10%;    
     z-index: 5;  
      
 }
@@ -46,7 +46,7 @@
 {
     background:rgba(255,255,255,255);
     width: 30%;
-    height: 100%;
+    height: 30%;
     display: inline-block;
     margin-top: 50px;
     margin-bottom: 100px; 
@@ -68,7 +68,7 @@
     background: rgba(208,233,253,255);
     padding: 50px;
     border-radius: 20px;
-    margin: 50px -50px; 
+    margin: 0% -10%; 
     z-index: 5;
 }
 
@@ -83,7 +83,7 @@
 
 .title
 {
-    font-size: 20px;
+    font-size:30px;
     margin-bottom: 20px;
     color:rgba(4,6,12,255);
    
@@ -96,15 +96,22 @@
     color:rgba(176,176,168,255);
 }
 
-.link
-{
-    max-height:100%;
-    max-width:100%;
-    left:0;
-    color:rgba(123,166,139,255);
-    font-family: sans-serif;
-    font-style: italic;
+.link {
+    
+    border: 2px solid black;
+    background-color: white;
     text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-color: #04AA6D;
+    border-radius: 5px;
+    color: green;
+    cursor: pointer;
+  }
+.link:hover{
+    background-color: #04AA6D;
+    color: white;
 }
 
 .content
@@ -126,7 +133,7 @@
 
 .title1
 {
-    font-size: 20px;
+    font-size:30px;
     margin-bottom: 20px;
     color:rgba(4,6,12,255);
    
@@ -166,7 +173,7 @@
 
 .title2
 {
-    font-size: 20px;
+    font-size:30px;
     margin-bottom: 20px;
     color:rgba(4,6,12,255);
    
@@ -294,6 +301,7 @@
 .category
 {
     display: flex;
+    margin-top: 100px;
     margin:10px;
     position: relative;
     flex-direction: row;
@@ -351,4 +359,54 @@
     text-decoration: none;
     font-family:cursive;
 }
+/* NAVBAR*/
+.nav{
+    
+    position:relative;
+    top:0;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(254,200,39,255);
+    display: flex;  
+    align-items: center;
+    
+    
+}
 
+.logo{
+
+    font-size: 50px;
+    margin:auto;
+    font-style: oblique;
+    font-weight: 300;
+    color: black;
+}
+
+/* MediaQueries */
+
+
+@media screen and (max-width: 480px) {
+    .main-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:50px;
+    }
+.container1
+{
+   
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: rgba(208,233,253,255);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 50px -50px;    
+    z-index: 5;  
+     
+}
+}
