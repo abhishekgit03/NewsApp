@@ -147,3 +147,12 @@ var sports=document.querySelector(".sports");
 sports.addEventListener("click", () => {
     getdata('sports')
 });
+
+function myFunction() {
+    var element = document.getElementById('hero');
+    var headline=document.getElementById('headline');
+    var navtoggle=document.getElementById('nav');
+    headline.classList.toggle("headline-toggle");
+    element.classList.toggle("toggle");
+    navtoggle.classList.toggle("nav-toggle");
+ }
