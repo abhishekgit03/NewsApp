@@ -351,7 +351,12 @@
     background-color:  #00B8FF;
     color: white;
 }
-#cat1:after
+#cat1:focus
+{
+    background-color:  #00B8FF;
+    color: white;
+}
+#cat1:active
 {
     background-color:  #00B8FF;
     color: white;

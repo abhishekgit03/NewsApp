@@ -7,7 +7,7 @@ async function getdata(categ){
     
 
     var title=data['articles'][1]['title']    //startpage middle box
-    var description=data['articles'][1]['description']
+    var description=data['articles'][1]['description'].slice(0,100)+"..."
     var link=data['articles'][1]['url']
     var urltoimage=data['articles'][1]['image']
     $('.title').html(title);
@@ -16,26 +16,26 @@ async function getdata(categ){
     $('.urltoimage').attr('src',urltoimage)
 
     var title=data['articles'][0]['title']     //startpage left box
-    var description=data['articles'][0]['description']
+    var description=data['articles'][0]['description'].slice(0,100)+"..."
     var link=data['articles'][0]['url']
     var urltoimage=data['articles'][0]['image']
-    var content=data['articles'][0]['content']
+    //var content=data['articles'][0]['content']
     $('.title1').html(title);
     $('.description1').html(description);
     $('.link1').attr('href',link);
     $('.urltoimage1').attr('src',urltoimage)
-    $('.content1').html(content);
+   // $('.content1').html(content);
 
     var title=data['articles'][2]['title']    //startpage right box
-    var description=data['articles'][2]['description']
+    var description=data['articles'][2]['description'].slice(0,100)+"..."
     var link=data['articles'][2]['url']
     var urltoimage=data['articles'][2]['image']
-    var content=data['articles'][2]['content']
+   // var content=data['articles'][2]['content']
     $('.title2').html(title);
     $('.description2').html(description);
     $('.link2').attr('href',link);
     $('.urltoimage2').attr('src',urltoimage)
-    $('.content2').html(content);
+    //$('.content2').html(content);
 
      //---------------nextbutton------------------
 
@@ -55,20 +55,19 @@ async function getdata(categ){
         
         
     var title=data['articles'][c]['title']
-    
-    var description=data['articles'][c]['description']
+    var description=data['articles'][c]['description'].slice(0,100)+"..."
     var link=data['articles'][c]['url']
     var urltoimage=data['articles'][c]['image']
-    var content=data['articles'][c]['content']
+    //var content=data['articles'][c]['content']
     $('.title').html(title);
     $('.description').html(description);
     $('.link').attr('href',link);
     $('.urltoimage').attr('src',urltoimage)
-    $('.content').html(content);
+    //$('.content').html(content);
 
 
     var title1=data['articles'][c-1]['title']
-    var description1=data['articles'][c-1]['description']
+    var description1=data['articles'][c-1]['description'].slice(0,100)+"..."
     var link1=data['articles'][c-1]['url']
     var urltoimage1=data['articles'][c-1]['image']
     $('.title1').html(title1);
@@ -77,7 +76,7 @@ async function getdata(categ){
     $('.urltoimage1').attr('src',urltoimage1)
 
     var title2=data['articles'][c+1]['title']
-    var description2=data['articles'][c+1]['description']
+    var description2=data['articles'][c+1]['description'].slice(0,100)+"..."
     var link2=data['articles'][c+1]['url']
     var urltoimage2=data['articles'][c+1]['image']
     $('.title2').html(title2);
@@ -95,7 +94,7 @@ async function getdata(categ){
         console.log("Clicked")
         console.log(data['articles'][c])
     
-    var title=data['articles'][c]['title']
+    var title=data['articles'][c]['title'].slice(0,100)+"..."
     var description=data['articles'][c]['description']
     var link=data['articles'][c]['url']
     var urltoimage=data['articles'][c]['image']
@@ -105,7 +104,7 @@ async function getdata(categ){
     $('.urltoimage').attr('src',urltoimage)
 
     var title1=data['articles'][c+1]['title']
-    var description1=data['articles'][c+1]['description']
+    var description1=data['articles'][c+1]['description'].slice(0,100)+"..."
     var link1=data['articles'][c+1]['url']
     var urltoimage1=data['articles'][c+1]['image']
     $('.title1').html(title1);
@@ -114,7 +113,7 @@ async function getdata(categ){
     $('.urltoimage1').attr('src',urltoimage1)
 
     var title2=data['articles'][c-1]['title']
-    var description2=data['articles'][c-1]['description']
+    var description2=data['articles'][c-1]['description'].slice(0,100)+"..."
     var link2=data['articles'][c-1]['url']
     var urltoimage2=data['articles'][c-1]['image']
     $('.title2').html(title2);
