@@ -1,41 +1,40 @@
 async function getdata(categ){
-    c=1
     console.log("Get called")
     var url = 'https://gnews.io/api/v4/top-headlines?token=2619b7773b89f1bee4232007bca232e6&lang=en&topic='+categ;
     const res = await fetch(url)
     const data = await res.json() 
+    func2(1)
+
+    // -------------------main function---------------------------------------
+    function func2(c)
+    {
+        var title=data['articles'][c]['title']
+        var description=data['articles'][c]['description'].slice(0,100)+"..."
+        var link=data['articles'][c]['url']
+        var urltoimage=data['articles'][c]['image']
+        $('.title').html(title);
+        $('.description').html(description);
+        $('.link').attr('href',link);
+        $('.urltoimage').attr('src',urltoimage)
     
-
-    var title=data['articles'][1]['title']    //startpage middle box
-    var description=data['articles'][1]['description'].slice(0,100)+"..."
-    var link=data['articles'][1]['url']
-    var urltoimage=data['articles'][1]['image']
-    $('.title').html(title);
-    $('.description').html(description);
-    $('.link').attr('href',link);
-    $('.urltoimage').attr('src',urltoimage)
-
-    var title=data['articles'][0]['title']     //startpage left box
-    var description=data['articles'][0]['description'].slice(0,100)+"..."
-    var link=data['articles'][0]['url']
-    var urltoimage=data['articles'][0]['image']
-    //var content=data['articles'][0]['content']
-    $('.title1').html(title);
-    $('.description1').html(description);
-    $('.link1').attr('href',link);
-    $('.urltoimage1').attr('src',urltoimage)
-   // $('.content1').html(content);
-
-    var title=data['articles'][2]['title']    //startpage right box
-    var description=data['articles'][2]['description'].slice(0,100)+"..."
-    var link=data['articles'][2]['url']
-    var urltoimage=data['articles'][2]['image']
-   // var content=data['articles'][2]['content']
-    $('.title2').html(title);
-    $('.description2').html(description);
-    $('.link2').attr('href',link);
-    $('.urltoimage2').attr('src',urltoimage)
-    //$('.content2').html(content);
+        var title1=data['articles'][c-1]['title']
+        var description1=data['articles'][c-1]['description'].slice(0,100)+"..."
+        var link1=data['articles'][c-1]['url']
+        var urltoimage1=data['articles'][c-1]['image']
+        $('.title1').html(title1);
+        $('.description1').html(description1);
+        $('.link1').attr('href',link1);
+        $('.urltoimage1').attr('src',urltoimage1)
+    
+        var title2=data['articles'][c+1]['title']
+        var description2=data['articles'][c+1]['description'].slice(0,100)+"..."
+        var link2=data['articles'][c+1]['url']
+        var urltoimage2=data['articles'][c+1]['image']
+        $('.title2').html(title2);
+        $('.description2').html(description2);
+        $('.link2').attr('href',link2);
+        $('.urltoimage2').attr('src',urltoimage2)
+    };
 
      //---------------nextbutton------------------
 
@@ -43,48 +42,14 @@ async function getdata(categ){
     button.addEventListener("click", () => {
         length_array=data['articles'].length
         c=c+1
-        if(c>=length_array)                 //testing-complete-working fine
+        if(c>=length_array)                    //testing-complete-working fine
         {
             c=0
         }  
-        
-        console.log("value of c is"+c)      //testing
-        console.log("Clicked")                //testing
-        console.log(data['articles'][c])        //testing
-        
-        
-        
-    var title=data['articles'][c]['title']
-    var description=data['articles'][c]['description'].slice(0,100)+"..."
-    var link=data['articles'][c]['url']
-    var urltoimage=data['articles'][c]['image']
-    //var content=data['articles'][c]['content']
-    $('.title').html(title);
-    $('.description').html(description);
-    $('.link').attr('href',link);
-    $('.urltoimage').attr('src',urltoimage)
-    //$('.content').html(content);
-
-
-    var title1=data['articles'][c-1]['title']
-    var description1=data['articles'][c-1]['description'].slice(0,100)+"..."
-    var link1=data['articles'][c-1]['url']
-    var urltoimage1=data['articles'][c-1]['image']
-    $('.title1').html(title1);
-    $('.description1').html(description1);
-    $('.link1').attr('href',link1);
-    $('.urltoimage1').attr('src',urltoimage1)
-
-    var title2=data['articles'][c+1]['title']
-    var description2=data['articles'][c+1]['description'].slice(0,100)+"..."
-    var link2=data['articles'][c+1]['url']
-    var urltoimage2=data['articles'][c+1]['image']
-    $('.title2').html(title2);
-    $('.description2').html(description2);
-    $('.link2').attr('href',link2);
-    $('.urltoimage2').attr('src',urltoimage2)
-
-
+        func2(c);  
+        console.log("value of c is"+c)     
+        console.log("Clicked")                
+        console.log(data['articles'][c])        
     });
 
     //---------------backbutton------------------
@@ -93,39 +58,16 @@ async function getdata(categ){
         c=c-1
         console.log("Clicked")
         console.log(data['articles'][c])
-    
-    var title=data['articles'][c]['title'].slice(0,100)+"..."
-    var description=data['articles'][c]['description']
-    var link=data['articles'][c]['url']
-    var urltoimage=data['articles'][c]['image']
-    $('.title').html(title);
-    $('.description').html(description);
-    $('.link').html(link);
-    $('.urltoimage').attr('src',urltoimage)
-
-    var title1=data['articles'][c+1]['title']
-    var description1=data['articles'][c+1]['description'].slice(0,100)+"..."
-    var link1=data['articles'][c+1]['url']
-    var urltoimage1=data['articles'][c+1]['image']
-    $('.title1').html(title1);
-    $('.description1').html(description1);
-    $('.link1').attr('href',link1);
-    $('.urltoimage1').attr('src',urltoimage1)
-
-    var title2=data['articles'][c-1]['title']
-    var description2=data['articles'][c-1]['description'].slice(0,100)+"..."
-    var link2=data['articles'][c-1]['url']
-    var urltoimage2=data['articles'][c-1]['image']
-    $('.title2').html(title2);
-    $('.description2').html(description2);
-    $('.link2').attr('href',link2);
-    $('.urltoimage2').attr('src',urltoimage2)
+        if(c<=0)                              //testing-complete-working fine
+        {
+            c=length_array
+        }  
+        func2(c);  
     });
-    
+   
 }       
 
-getdata('general')
-
+getdata('general')   // default category
 
 var business=document.querySelector(".business");
 business.addEventListener("click", () => {
@@ -147,7 +89,8 @@ sports.addEventListener("click", () => {
     getdata('sports')
 });
 
-function myFunction() {
+function myFunction()   //Dark Mode
+ {
     var element = document.getElementById('hero');
     var headline=document.getElementById('headline');
     var navtoggle=document.getElementById('nav');
