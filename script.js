@@ -107,12 +107,12 @@ sports.addEventListener("click", () => {
   general.id = "cat1";
 });
 
-function myFunction() {
-  //dark mode
-  var element = document.getElementById("hero");
-  var headline = document.getElementById("headline");
-  var navtoggle = document.getElementById("nav");
-  headline.idList.toggle("headline-toggle");
-  element.idList.toggle("toggle");
-  navtoggle.idList.toggle("nav-toggle");
-}
+function myFunction()   //dark mode
+{
+    var element = document.getElementById('hero');
+    var headline=document.getElementById('headline');
+    var navtoggle=document.getElementById('nav');
+    headline.classList.toggle("headline-toggle");
+    element.classList.toggle("toggle");
+    navtoggle.classList.toggle("nav-toggle");
+ }
