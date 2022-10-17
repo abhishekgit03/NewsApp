@@ -333,7 +333,19 @@
     justify-content: center;
 
 }
+.category-general-img{
+    background-image: url("./general.jpg");
+}
+.category-business-img{
+    background-image: url("./business.jpg");
 
+}
+.category-entertainment-img{
+    background-image: url("./entertainment.jpg");
+}
+.category-sports-img{
+    background-image: url("./sports.jpg");
+}
 #cat1
 {
     margin: 20px 10px;

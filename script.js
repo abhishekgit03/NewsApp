@@ -72,35 +72,53 @@ async function getdata(categ) {
 getdata("general"); //default category
 
 var business = document.querySelector(".business");
+var entertainment = document.querySelector(".entertainment");
+var general = document.querySelector(".general");
+var sports = document.querySelector(".sports");
+
 business.addEventListener("click", () => {
   getdata("business");
+  general.classList.remove("category-general-img");
+  entertainment.classList.remove("category-entertainment-img");
+  sports.classList.remove("category-sports-img");
+  business.classList.add("category-business-img");
+
   business.id = "cat1-active";
   entertainment.id = "cat1";
   general.id = "cat1";
   sports.id = "cat1";
 });
 
-var entertainment = document.querySelector(".entertainment");
 entertainment.addEventListener("click", () => {
   getdata("entertainment");
+  general.classList.remove("category-general-img");
+  sports.classList.remove("category-sports-img");
+  business.classList.remove("category-business-img");
+  entertainment.classList.add("category-entertainment-img");
   entertainment.id = "cat1-active";
   business.id = "cat1";
   general.id = "cat1";
   sports.id = "cat1";
 });
 
-var general = document.querySelector(".general");
 general.addEventListener("click", () => {
   getdata("general");
+  general.classList.add("category-general-img");
+  entertainment.classList.remove("category-entertainment-img");
+  sports.classList.remove("category-sports-img");
+  business.classList.remove("category-business-img");
   general.id = "cat1-active";
   business.id = "cat1";
   entertainment.id = "cat1";
   sports.id = "cat1";
 });
 
-var sports = document.querySelector(".sports");
 sports.addEventListener("click", () => {
   getdata("sports");
+  general.classList.remove("category-general-img");
+  entertainment.classList.remove("category-entertainment-img");
+  business.classList.remove("category-business-img");
+  sports.classList.add("category-sports-img");
   sports.id = "cat1-active";
   business.id = "cat1";
   entertainment.id = "cat1";
