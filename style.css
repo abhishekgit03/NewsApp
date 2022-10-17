@@ -105,7 +105,6 @@
     max-height:100%; 
     max-width:100%;
 }
-
 .title
 {
     font-size:30px;
@@ -351,17 +350,27 @@
     background-color:  #00B8FF;
     color: white;
 }
-#cat1:focus
+/* #cat1:focus
 {
     background-color:  #00B8FF;
     color: white;
-}
-#cat1:active
+} */
+/* #cat1:active
 {
     background-color:  #00B8FF;
     color: white;
+} */
+#cat1-active
+{
+    background-color:  #00B8FF;
+    color: white;
+    margin: 20px 10px;
+    width: 20%;
+    padding: 50px;
+    border-radius:20px;
+    border:1px solid black;
+    cursor: pointer;  
 }
-
 .footer
 {
   
