@@ -335,7 +335,7 @@
 }
 
 /* //// General  //// */
-.slide-general {
+#cat1 {
     border-color: #3498db;
     color: #00B8FF;
     box-shadow: 0 0 30px 30px #7fb4d6 inset, 0 0 0 0 #00B8FF;
@@ -344,130 +344,12 @@
     transition: all 150ms ease-in-out;
     min-width: fit-content;
 }
-.slide-general:hover {
+#cat1:hover {
       color: #00B8FF;
     box-shadow: 0 0 10px 0 #adcde2 inset, 0 0 10px 4px #a7c9df;
     border-radius: 10px;
 }
 
-  
-  /* Entertainment button */
-.slide-entertainment {
-    width: 220px;
-    height: 140px;
-    border: none;
-    outline: none;
-    color: #00B8FF;
-    background: white;
-    border-radius: 25px;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    min-width: fit-content;
-}
-.slide-entertainment:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-}
-
-.slide-entertainment:active {
-    color: #00B8FF
-}
-
-.slide-entertainment:active:after {
-    background: transparent;
-}
-
-.slide-entertainment:hover:before {
-    opacity: 0.6;
-}
-
-.slide-entertainment:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white;
-    color: #00B8FF;
-    left: 0;
-    top: 0;
-    border-radius: 20px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-/* Business Button*/
-
-.grow-business {
-    border-color: #00B8FF;
-  border-radius: 20px;
-  color: #00B8FF;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  -webkit-transition: color 150ms ease-in-out;
-  transition: color 150ms ease-in-out;
-  cursor: pointer;  
-  min-width: fit-content;
-}
-.grow-business:after {
-    content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 0;
-  height: 100%;
-  background: #00B8FF;
-  z-index: -1;
-  -webkit-transition: width 150ms ease-in-out;
-  transition: width 150ms ease-in-out;
-}
-.grow-business:hover {
-  color: #fff;
-  border-radius: 10px;
-}
-.grow-business:hover:after {
-  width: 110%;
-  border-radius: 20px;
-}
-
-/*Sports Button*/
-.grow-sports {
-  border-color: #00B8FF;
-  color: #00B8FF;
-  border-radius: 20px;
-  background-image: -webkit-linear-gradient(45deg, #00B8FF 50%, transparent 50%);
-  background-image: linear-gradient(45deg, #00B8FF 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
-  min-width: fit-content;
-}
-.grow-sports:hover {
-  background-position: 0;
-  color: #fff;
-  border-radius: 10px;
-}
 #cat1
 {
     margin: 20px 10px;
