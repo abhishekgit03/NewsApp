@@ -465,7 +465,7 @@
 /* Footer-New */
 
 .container-new {
-  max-width: 1170px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -476,9 +476,10 @@
 
 .footer-new {
   background-color: #24262b;
-  padding: 70px 0px;
+  padding: 50px 0px;
   /* position: fixed; */
   bottom: 0px;
+  padding: 0.1rem;
   width: 100%;
 }
 
@@ -489,7 +490,7 @@ ul {
 .footer-col {
   width: 25%;
   padding: 0 15px;
-  margin: 45px;
+  margin: 30px;
 }
 
 .footer-col h4 {
